@@ -1,41 +1,21 @@
-# eyex-prestudy
+# EyeX IntelliJ Plugin for (Pre-)Study
 
-![Build](https://github.com/JanRankenhohn/eyex-prestudy/workflows/Build/badge.svg)
-[![Version](https://img.shields.io/jetbrains/plugin/v/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
-[![Downloads](https://img.shields.io/jetbrains/plugin/d/PLUGIN_ID.svg)](https://plugins.jetbrains.com/plugin/PLUGIN_ID)
+Reproduced Study from Sharif et al.:
 
-## Template ToDo list
-- [x] Create a new [IntelliJ Platform Plugin Template][template] project.
-- [ ] Verify the [pluginGroup](/gradle.properties), [plugin ID](/src/main/resources/META-INF/plugin.xml) and [sources package](/src/main/kotlin).
-- [ ] Review the [Legal Agreements](https://plugins.jetbrains.com/docs/marketplace/legal-agreements.html).
-- [ ] [Publish a plugin manually](https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/publishing_plugin.html) for the first time.
-- [ ] Set the Plugin ID in the above README badges.
-- [ ] Set the [Deployment Token](https://plugins.jetbrains.com/docs/marketplace/plugin-upload.html).
-- [ ] Click the <kbd>Watch</kbd> button on the top of the [IntelliJ Platform Plugin Template][template] to be notified about releases containing new features and fixes.
+B. Sharif, M. Falcone, and J. I. Maletic, “An eye-tracking study on the role of scan time in finding source code defects,” in Proceedings of the Symposium on Eye Tracking Research and Applications - ETRA '12, Santa Barbara, California, 2012, p. 381.
 
-<!-- Plugin description -->
-This Fancy IntelliJ Platform Plugin is going to be your implementation of the brilliant ideas that you have.
+This plugin integrates eyex-lib.jar:
+https://github.com/JanRankenhohn/eyex-lib
 
-This specific section is a source for the [plugin.xml](/src/main/resources/META-INF/plugin.xml) file which will be
-extracted by the [Gradle](/build.gradle.kts) during the build process.
+This Plugin is developed specifically for the reproduced study from Sharif et al.
+-> works only with specific code stimuli
+-> can be used as blueprint for future plugins that use eyex-lib
 
-To keep everything working, do not remove `<!-- ... -->` sections. 
-<!-- Plugin description end -->
-
-## Installation
-
-- Using IDE built-in plugin system:
-  
-  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>Marketplace</kbd> > <kbd>Search for "eyex-prestudy"</kbd> >
-  <kbd>Install Plugin</kbd>
-  
-- Manually:
-
-  Download the [latest release](https://github.com/JanRankenhohn/eyex-prestudy/releases/latest) and install it manually using
-  <kbd>Preferences</kbd> > <kbd>Plugins</kbd> > <kbd>⚙️</kbd> > <kbd>Install plugin from disk...</kbd>
+## Functions:
+- Set Participant ID
+- Start Trial Session
+- (Dis-)Connect to Eye-Tracker API
+- Writes CSV Logs
 
 
----
 Plugin based on the [IntelliJ Platform Plugin Template][template].
-
-[template]: https://github.com/JetBrains/intellij-platform-plugin-template
