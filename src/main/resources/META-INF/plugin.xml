@@ -16,4 +16,25 @@
         <listener class="com.github.janrankenhohn.eyexprestudy.listeners.MyProjectManagerListener"
                   topic="com.intellij.openapi.project.ProjectManagerListener"/>
     </projectListeners>
+
+    <actions>
+        <!-- Add your actions here -->
+        <group id="Testplugin.ur.eyex.intellijplugin.TestAction" text="TestPlugin" description="Test Api Host Connection">
+            <add-to-group group-id="MainMenu" anchor="last" />
+            <action class="com.github.janrankenhohn.eyexprestudy.java.SwitchFileAction" id="PreStudy.Actions.SwitchFileAction" text="Switch File">
+                <keyboard-shortcut first-keystroke="control alt A" second-keystroke="F" keymap="$default"/>
+            </action>
+            <action class="com.github.janrankenhohn.eyexprestudy.java.LogErrorFindingAction" id="PreStudy.Actions.LogErrorFindingAction" text="Log Error Finding">
+                <keyboard-shortcut first-keystroke="control alt A" second-keystroke="P" keymap="$default"/>
+            </action>
+            <action class="com.github.janrankenhohn.eyexprestudy.java.SetParticipantAction" id="PreStudy.Actions.SetParticipantAction" text="Set Participant">
+            </action>
+            <action class="com.github.janrankenhohn.eyexprestudy.java.ConnectAction" id="PreStudy.Actions.ConnectAction" text="Connect">
+                <keyboard-shortcut first-keystroke="control alt A" second-keystroke="C" keymap="$default"/>
+            </action>
+            <action class="com.github.janrankenhohn.eyexprestudy.java.StartSessionAction" id="PreStudy.Actions.StartSessionAction" text="Start Session">
+                <keyboard-shortcut first-keystroke="control alt A" second-keystroke="V" keymap="$default"/>
+            </action>
+        </group>
+    </actions>
 </idea-plugin>

@@ -39,6 +39,8 @@ repositories {
 }
 dependencies {
     detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.12.0")
+    implementation(fileTree(mapOf("dir" to "lib", "include" to listOf("*.jar"))))
+    implementation("com.opencsv:opencsv:4.1")
 }
 
 // Configure gradle-intellij-plugin plugin.
